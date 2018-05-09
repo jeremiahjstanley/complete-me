@@ -1,0 +1,41 @@
+{
+  "name": "TDD",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test",
+    "start": "webpack",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./lib/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremiahjstanley/TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremiahjstanley/TDD/issues"
+  },
+  "homepage": "https://github.com/jeremiahjstanley/TDD#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "mocha": "^5.1.1"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.1"
+  }
+}
