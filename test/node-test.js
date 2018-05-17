@@ -5,23 +5,24 @@ describe('Node', () => {
   let node;
 
   beforeEach(() => {
-    node = new Node('pizza');
+    node = new Node('dog');
   })
 
   it('should exist', () => {
     expect(node).to.exist;
   })
 
-  it('should default next to null', () => {
-    expect(node.next).to.equal(null);
+  it('should default data property to null', () => {
+    node = new Node();
+    expect(node.data).to.equal(null);
   })
 
-  it('should take data and assign it to a data property', () => {
-    expect(node.data).to.equal('pizza');
+  it('should take data and assign it to the node\'s data property', () => {
+    expect(node.data).to.equal('dog');
   })
 
-  it('should have a lastNode property set to false', () => {
-    expect(node.lastNode).to.equal(false);
+  it('should default completedWord property to null', () => {
+    expect(node.completedWord).to.equal(null);
   })
 
   it('should have a children property of an empty object', () => {
